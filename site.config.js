@@ -12,9 +12,9 @@ module.exports = {
   author: 'Delicious Raccoon',
 
   // open graph metadata (optional)
-  description: 'Example site description',
-  socialImageTitle: 'Transitive Bullshit',
-  socialImageSubtitle: 'Hello World!',
+  description: '一份购物指南',
+  socialImageTitle: 'Delicious Raccoon',
+  socialImageSubtitle: 'Hello Shit!',
 
   // social usernames (optional)
   twitter: 'transitive_bs',
