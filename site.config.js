@@ -7,8 +7,8 @@ module.exports = {
   //rootNotionSpaceId: '25900039-5d85-4396-968b-a28f366f1763',
     rootNotionSpaceId: null,
   // basic site info (required)
-  name: 'temporary record',
-  domain: 'https://flat-hovercraft-661.notion.site/e721439b67f84fde8e9a291fca4d6796',
+  name: 'temporaryrecord',
+  domain: 'blog-ecru-nine.vercel.app',
   author: 'Delicious Raccoon',
 
   // open graph metadata (optional)
