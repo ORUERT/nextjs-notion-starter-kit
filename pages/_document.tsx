@@ -43,6 +43,12 @@ export default class MyDocument extends Document {
             <Main />
 
             <NextScript />
+         <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              resizeCover();`
+            }}
+          />
           </body>
         </Html>
       </IconContext.Provider>
