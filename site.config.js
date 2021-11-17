@@ -4,8 +4,8 @@ module.exports = {
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  //rootNotionSpaceId: '25900039-5d85-4396-968b-a28f366f1763',
-    rootNotionSpaceId: null,
+  rootNotionSpaceId: '25900039-5d85-4396-968b-a28f366f1763',
+    //rootNotionSpaceId: null,
   // basic site info (required)
   name: 'temporaryrecord',
   domain: 'blog-ecru-nine.vercel.app',
