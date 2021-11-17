@@ -39,6 +39,4 @@
     var isDarkMode = document.body.classList.contains(classNameDark)
     localStorage.setItem(storageKey, JSON.stringify(isDarkMode))
   }
-    
-  resizeCover();
 })()
