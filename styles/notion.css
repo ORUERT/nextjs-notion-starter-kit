@@ -49,11 +49,7 @@
 .notion-gallery-grid {
   display: grid;
   position: relative; 
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
-  grid-auto-rows: 1fr; 
-  gap: 16px;
-  border-top: 1px solid rgb(77, 81, 83); 
-  padding-top: 16px; padding-bottom: 4px;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 3vmin;
   gap: 3vmin;
 }
