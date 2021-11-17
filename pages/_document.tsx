@@ -56,7 +56,8 @@ export default class MyDocument extends Document {
                   item.src=item.src +"&fit=clip&w=1200";
               })
           }
-              resizeCover();`
+              resizeCover();
+              console.log("image resizing on page load.");`
             }}
           />
           </body>
