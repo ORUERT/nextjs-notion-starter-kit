@@ -4,8 +4,8 @@ module.exports = {
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: '25900039-5d85-4396-968b-a28f366f1763',
-
+  //rootNotionSpaceId: '25900039-5d85-4396-968b-a28f366f1763',
+    rootNotionSpaceId: null,
   // basic site info (required)
   name: 'temporary record',
   domain: 'https://flat-hovercraft-661.notion.site/e721439b67f84fde8e9a291fca4d6796',
