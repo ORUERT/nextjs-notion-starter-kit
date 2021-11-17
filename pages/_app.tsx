@@ -52,8 +52,8 @@ export default function App({ Component, pageProps }) {
       Fathom.load(fathomId, fathomConfig)
 
       function onRouteChangeComplete() {
-        resize.resizeCover()
-        Fathom.trackPageview()
+        resize.resizeCover();
+        Fathom.trackPageview();
       }
 
       router.events.on('routeChangeComplete', onRouteChangeComplete)
