@@ -6,7 +6,7 @@ import 'react-notion-x/src/styles.css'
 
 // used for code syntax highlighting (optional)
 import 'prismjs/themes/prism-coy.css'
-
+import * as resize from 'lib/imgResize'
 // this might be better for dark mode
 // import 'prismjs/themes/prism-okaidia.css'
 
@@ -52,6 +52,7 @@ export default function App({ Component, pageProps }) {
       Fathom.load(fathomId, fathomConfig)
 
       function onRouteChangeComplete() {
+        resize.resizeCover()
         Fathom.trackPageview()
       }
 
