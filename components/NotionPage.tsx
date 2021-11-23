@@ -235,7 +235,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         bodyClassName={cs(
           styles.notion,
           pageId === site.rootNotionPageId && 'index-page',
-          secondDir && 'second-page'
+          secondDir && 'second-dir'
         )}
         components={{
           pageLink: ({
