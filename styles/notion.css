@@ -21,6 +21,10 @@
   --notion-max-width: 1000px;
 }
 
+.second-dir {
+  --notion-max-width: 1000px;
+}
+
 .notion-text {
   padding: 0.5em 2px;
 }
