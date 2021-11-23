@@ -11,6 +11,13 @@ export const notion = new NotionAPI({
 
 export async function getPage(pageId: string): Promise<ExtendedRecordMap> {
   const recordMap = await notion.getPage(pageId)
+  console.log('get recordmap', {
+    isDev: config.isDev,
+    title,
+    pageId,
+    rootNotionPageId: site.rootNotionPageId,
+    recordMap
+  })
   const blockIds = Object.keys(recordMap.block)
 
   const imageUrls: string[] = blockIds
