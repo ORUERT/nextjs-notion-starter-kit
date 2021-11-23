@@ -56,6 +56,13 @@
   gap: 6vmin;
 }
 
+@media only screen and (max-width: 920px) {
+  .index-page.notion-page {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
 .notion-gallery-grid .notion-page-icon {
   display: none;
 }
@@ -103,13 +110,11 @@
   filter: brightness(120%);
 }
 
-/* only target safari */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  _::-webkit-full-page-media,
-  _:future,
-  :root,
-  .notion-collection-card-cover {
-    transition: none 0ms linear;
+@media only second-dir and(--notion-max-width:1000px) {
+  .notion-gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 6vmin;
+    gap: 6vmin;
   }
 }
 
