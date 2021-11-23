@@ -134,7 +134,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
   console.log('siteMapPageUrl canonicalPageUrl', {
     siteMapPageUrl,
     canonicalPageUrl,
-    isBlogPost
+    isBlogPost,
+    showTableOfContents
   })
   const socialImage = mapNotionImageUrl(
     (block as PageBlock).format?.page_cover || config.defaultPageCover,
