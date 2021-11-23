@@ -35,6 +35,19 @@ export const getCanonicalPageUrl =
       })}`
     }
   }
+export const getCannoicalPageSurffix =
+  (site: Site, recordMap: ExtendedRecordMap) =>
+  (pageId = '') => {
+    const pageUuid = parsePageId(pageId, { uuid: true })
+
+    if (uuidToId(pageId) === site.rootNotionPageId) {
+      return `root`
+    } else {
+      return `${getCanonicalPageId(pageUuid, recordMap, {
+        uuid
+      })}`
+    }
+  }
 
 function createUrl(path: string, searchParams: URLSearchParams) {
   return [path, searchParams.toString()].filter(Boolean).join('?')
