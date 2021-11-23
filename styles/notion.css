@@ -150,7 +150,7 @@
     display: none !important;
   }
 }
-@media (--notion-max-width: 1000px){
+@supports (--notion-max-width: 1000px){
   .notion-gallery-grid {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     grid-gap: 6vmin;
