@@ -133,13 +133,13 @@ export const NotionPage: React.FC<types.PageProps> = ({
     block.type === 'page' && block.parent_table === 'collection'
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
-  const index = 
-        canonicalPageSurffix==='root'||canonicalPageSurffix==='algorithm'
+  const secondDir = 
+        canonicalPageSurffix==='photograph'||canonicalPageSurffix==='algorithm'||canonicalPageSurffix==='game'||canonicalPageSurffix==='reading-list'
   console.log('siteMapPageUrl canonicalPageUrl', {
     siteMapPageUrl,
     canonicalPageUrl,
     canonicalPageSurffix,
-    index,
+    secondDir,
     isBlogPost,
     showTableOfContents
   })
