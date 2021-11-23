@@ -16,7 +16,7 @@ import { NotionRenderer, Code, Collection, CollectionRow } from 'react-notion-x'
 
 // utils
 import { getBlockTitle } from 'notion-utils'
-import { mapPageUrl, getCanonicalPageUrl } from 'lib/map-page-url'
+import { mapPageUrl, getCanonicalPageUrl, getCannoicalPageSurffix } from 'lib/map-page-url'
 import { mapNotionImageUrl } from 'lib/map-image-url'
 import { getPageDescription } from 'lib/get-page-description'
 import { getPageTweet } from 'lib/get-page-tweet'
@@ -124,6 +124,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const canonicalPageUrl =
     !config.isDev && getCanonicalPageUrl(site, recordMap)(pageId)
+  const canonicalPageSurffix =
+    !config.isDev && getCannoicalPageSurffix(site, recordMap)(pageId)
   
   // const isRootPage =
   //   parsePageId(block.id) === parsePageId(site.rootNotionPageId)
@@ -134,6 +136,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   console.log('siteMapPageUrl canonicalPageUrl', {
     siteMapPageUrl,
     canonicalPageUrl,
+    canonicalPageSurffix,
     isBlogPost,
     showTableOfContents
   })
