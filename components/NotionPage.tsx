@@ -137,6 +137,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     siteMapPageUrl,
     canonicalPageUrl,
     canonicalPageSurffix,
+    (canonicalPageSurffix==='root'||canonicalPageSurffix==='algorithm'?0:1),
     isBlogPost,
     showTableOfContents
   })
