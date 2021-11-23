@@ -50,19 +50,7 @@ export const getCannoicalPageSurffix =
     }
   }
 
-export const getSecondlevelDir =
-  (site: Site, recordMap: ExtendedRecordMap) =>
-  (pageId = '') => {
-    const pageUuid = parsePageId(pageId, { uuid: true })
-    const secondDirName = getCannoicalPageSurffix(site, recordMap)(pageId)
-    switch(secondDirName)
-    {
-        case 'root':
-            return -1
-        case 'algorithm':
-            return 0
-    }
-  }
+
 
 function createUrl(path: string, searchParams: URLSearchParams) {
   return [path, searchParams.toString()].filter(Boolean).join('?')
