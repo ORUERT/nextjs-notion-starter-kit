@@ -22,8 +22,7 @@
 }
 
 .second-dir {
-  --notion-max-width: 1000px;
-  --second-dir: 1;
+  --notion-max-width: 800px;
 }
 
 .notion-text {
@@ -151,7 +150,7 @@
     display: none !important;
   }
 }
-@supports (--second-dir: 1){
+@supports (--notion-max-width: 800px){
   .notion-gallery-grid {
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     grid-gap: 6vmin;
