@@ -108,7 +108,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
     title,
     pageId,
     rootNotionPageId: site.rootNotionPageId,
-    recordMap
+    recordMap,
+    keys
   })
 
   if (!config.isServer) {
@@ -123,14 +124,18 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const canonicalPageUrl =
     !config.isDev && getCanonicalPageUrl(site, recordMap)(pageId)
-
+  
   // const isRootPage =
   //   parsePageId(block.id) === parsePageId(site.rootNotionPageId)
   const isBlogPost =
     block.type === 'page' && block.parent_table === 'collection'
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
-
+  console.log('siteMapPageUrl canonicalPageUrl', {
+    siteMapPageUrl,
+    canonicalPageUrl,
+    isBlogPost
+  })
   const socialImage = mapNotionImageUrl(
     (block as PageBlock).format?.page_cover || config.defaultPageCover,
     block
