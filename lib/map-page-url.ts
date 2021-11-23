@@ -25,7 +25,8 @@ export const mapPageUrl =
 export const getCanonicalPageUrl =
   (site: Site, recordMap: ExtendedRecordMap) =>
   (pageId = '') => {
-    const pageUuid = parsePageId(pageId, { uuid: true })
+    const index = 0;
+    switch
 
     if (uuidToId(pageId) === site.rootNotionPageId) {
       return `https://${site.domain}`
@@ -46,6 +47,20 @@ export const getCannoicalPageSurffix =
       return `${getCanonicalPageId(pageUuid, recordMap, {
         uuid
       })}`
+    }
+  }
+
+export const getSecondlevelDir =
+  (site: Site, recordMap: ExtendedRecordMap) =>
+  (pageId = '') => {
+    const pageUuid = parsePageId(pageId, { uuid: true })
+    const secondDirName = getCannoicalPageSurffix(site, recordMap)(pageId)
+    switch(secondDirName)
+    {
+        case 'root':
+            return -1
+        case 'algorithm':
+            return 0
     }
   }
 
