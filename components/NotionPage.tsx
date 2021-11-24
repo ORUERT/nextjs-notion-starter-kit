@@ -232,6 +232,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
       {isLiteMode && <BodyClassName className='notion-lite' />}
 
       <NotionRenderer
+        className={cs(
+          secondDir && 'second-note'
+        )}
         bodyClassName={cs(
           styles.notion,
           pageId === site.rootNotionPageId && 'index-page',
