@@ -85,6 +85,11 @@
   border-radius: 16px;
   box-shadow: none;
 }
+.notion-gallery-grid.notion-gallery-grid-size-small{
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    grid-gap: 6vmin;
+    gap: 6vmin; 
+}
 
 .notion-collection-card-cover img {
   border-radius: 16px;
