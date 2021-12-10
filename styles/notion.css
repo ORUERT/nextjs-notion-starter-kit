@@ -90,7 +90,11 @@
     grid-gap: 6vmin;
     gap: 6vmin; 
 }
-
+.notion-blue_background, .notion-brown_background, .notion-gray_background, .notion-orange_background, .notion-pink_background, .notion-purple_background, .notion-red_background, .notion-teal_background, .notion-yellow_background{
+  background-image: none;
+  border-bottom-left-radius: none;
+  margin:none;
+}
 .notion-collection-card-cover img {
   border-radius: 16px;
 }
